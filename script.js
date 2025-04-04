@@ -10,28 +10,32 @@ let enemiesStrength = 0;
 let runs = 0;
 
 document.getElementById("btn").addEventListener("click", function() {
-    if(startPack){
-        guerreiros[0][0] = document.getElementById("hero01Name").value;
-        guerreiros[0][1] = Math.floor(Math.random()*19)+1;    
-        guerreiros[1][0]= document.getElementById("hero02Name").value;
-        guerreiros[1][1] = Math.floor(Math.random()*19)+1;  
-        guerreiros[2][0] = document.getElementById("hero03Name").value;
-        guerreiros[2][1] = Math.floor(Math.random()*19)+1;  
+    if(document.getElementById("hero01Name").value == "" || document.getElementById("hero02Name").value == "" || document.getElementById("hero03Name").value == "") alert("Por favor, nomeie seus herois");
+    else{
+        if(startPack){
+            guerreiros[0][0] = document.getElementById("hero01Name").value;
+            guerreiros[0][1] = Math.floor(Math.random()*19)+1;    
+            guerreiros[1][0]= document.getElementById("hero02Name").value;
+            guerreiros[1][1] = Math.floor(Math.random()*19)+1;  
+            guerreiros[2][0] = document.getElementById("hero03Name").value;
+            guerreiros[2][1] = Math.floor(Math.random()*19)+1;  
 
-        startPack = false;
+            startPack = false;
+        }
+        
+
+        area.style.display = "none";
+        areaGame.style.display = "block";
+
+        document.getElementById("hero01").innerText = guerreiros[0][0];
+        document.getElementById("heroPower01").innerText = "Poder: " + guerreiros[0][1];
+        document.getElementById("hero02").innerText = guerreiros[1][0];
+        document.getElementById("heroPower02").innerText = "Poder: " + guerreiros[1][1];
+        document.getElementById("hero03").innerText = guerreiros[2][0];
+        document.getElementById("heroPower03").innerText = "Poder: " + guerreiros[2][1];
+        document.getElementById("gymPoints").innerHTML = "Pontos de treino: " + gymPoints; 
     }
     
-
-    area.style.display = "none";
-    areaGame.style.display = "block";
-
-    document.getElementById("hero01").innerText = guerreiros[0][0];
-    document.getElementById("heroPower01").innerText = "Poder: " + guerreiros[0][1];
-    document.getElementById("hero02").innerText = guerreiros[1][0];
-    document.getElementById("heroPower02").innerText = "Poder: " + guerreiros[1][1];
-    document.getElementById("hero03").innerText = guerreiros[2][0];
-    document.getElementById("heroPower03").innerText = "Poder: " + guerreiros[2][1];
-    document.getElementById("gymPoints").innerHTML = "Pontos de treino: " + gymPoints;
 
 
     
