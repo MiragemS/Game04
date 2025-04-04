@@ -127,3 +127,49 @@ body{
     height: 56vh;
 }
 
+.titleGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+    height: 12vh;
+}
+
+.titleGame p{
+    font-family: "Press Start 2P";
+    font-size: 22px;
+    color: white;
+}
+
+#upHero{
+    margin-top: 2vh;
+    width: 7vw;
+    height: 5vh;
+    background: rgba(116, 0, 0);
+    color: white;
+    font-size: 10px;
+    font-family: "Silkscreen";
+    border:none;
+    outline: none;
+    border-radius: 2px;
+}
+
+#upHero:hover{
+    background: rgb(93, 1, 1);
+}
+
+#btnFight{
+    margin-top: 6vh;
+}
+
+.gym{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+    height: 6vh;
+    color: white;
+    font-size: 10px;
+    font-family: "Silkscreen";
+
+}
