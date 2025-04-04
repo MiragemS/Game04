@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="frame">
+
+            <div class="content" id="content">
+                <div class="title">
+                    <p>Nomeie seus heróis</p>
+                </div>
+                <div class="heroes">
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <input type="text" placeholder="Digite aqui" id="hero01Name">
+                        </div>  
+                    </div>
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <input type="text" placeholder="Digite aqui" id="hero02Name">
+                        </div>  
+                    </div>
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <input type="text" placeholder="Digite aqui" id="hero03Name">
+                        </div>  
+                    </div>
+                </div>
+                <div class="startButton">
+                    <button id="btn">Começar</button>
+                </div>
+            </div>
+
+
+
+            <div class="contentGame" id="contentGame">
+                <div class="titleGame">
+                    <p>Seus lendários heróis</p>
+                </div>
+                <div class="heroes">
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <div>
+                                <p id="hero01"></p>
+                                <p id="heroPower01"></p>
+                                <button id="upHero" onclick="upHero(this)" value=0>Treinar</button>
+                            </div> 
+                        </div>  
+                    </div>
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <div>
+                                <p id="hero02"></p>
+                                <p id="heroPower02"></p>
+                                <button id="upHero" onclick="upHero(this)" value=1>Treinar</button>
+                            </div>                           
+                        </div>  
+                    </div>
+                    <div class="hero">
+                        <img src="img/hero01.png" alt="">
+                        <div class="name">
+                            <div>
+                                <p id="hero03"></p>
+                                <p id="heroPower03"></p>
+                                <button id="upHero" onclick="upHero(this)" value=2>Treinar</button>
+                            </div>                            
+                        </div>  
+                    </div>
+                </div>
+                <div class="startButton">
+                    <button id="btnFight">Lutar</button>
+                </div>
+                <div class="gym">
+                    <p id="gymPoints"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
